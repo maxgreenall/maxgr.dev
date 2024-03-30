@@ -1,8 +1,12 @@
+import { NextUIProvider } from "@nextui-org/react";
+
 function App() {
   return (
-    <main className="py-10">
-      <h1 className="font-bold text-3xl text-center">Max G</h1>
-    </main>
+    <NextUIProvider>
+      <div className="py-10">
+        <h1 className="font-bold text-3xl text-center">Max Gr</h1>
+      </div>
+    </NextUIProvider>
   )
 }
 
