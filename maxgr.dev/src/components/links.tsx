@@ -16,7 +16,7 @@ function Links(){
                 title={"LinkedIn"} subtitle={"linkedin.com"} link={"https://www.linkedin.com/in/maxgreenall/"}></LinkCard>
 
                 <LinkCard imageUrl="https://avatars.githubusercontent.com/u/86160567?s=200&v=4" 
-                title={"Email"} subtitle={"maxgreenall@gmail.com"} link={"https://github.com/maxgreenall"}></LinkCard>
+                title={"Email"} subtitle={"maxgreenall@gmail.com"} link={"mailto:maxgreenall@gmail.com"}></LinkCard>
             </div>
         </div>
     )

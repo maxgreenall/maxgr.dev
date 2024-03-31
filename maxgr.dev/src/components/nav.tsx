@@ -4,22 +4,22 @@ function Nav(){
     return(
       <Navbar>
         <NavbarBrand>
-          <p className="font-bold text-inherit">@maxgr.dev</p>
+          <p className="font-bold text-inherit">maxgr.dev</p>
         </NavbarBrand>
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <NavbarItem>
             <Link color="foreground" href="#">
-              Features
+              About
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Customers
+              Projects
             </Link>
           </NavbarItem>
           <NavbarItem>
             <Link color="foreground" href="#">
-              Integrations
+              Links
             </Link>
           </NavbarItem>
         </NavbarContent>
