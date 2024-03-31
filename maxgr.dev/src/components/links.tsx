@@ -1,4 +1,4 @@
-import {Card, CardHeader, Image} from "@nextui-org/react";
+import LinkCard from "./linkcard";
 
 function Links(){
     return(
@@ -9,53 +9,14 @@ function Links(){
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                        alt="nextui logo"
-                        height={40}
-                        radius="sm"
-                        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                        width={40}
-                        />
-                        <div className="flex flex-col">
-                        <p className="text-md">GitHub</p>
-                        <p className="text-small text-default-500">github.com</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                title={"GitHub"} subtitle={"github.com"} link={"https://github.com/maxgreenall"}></LinkCard>
 
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                        alt="nextui logo"
-                        height={40}
-                        radius="sm"
-                        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                        width={40}
-                        />
-                        <div className="flex flex-col">
-                        <p className="text-md">Linkedin</p>
-                        <p className="text-small text-default-500">linkedin.com</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl="https://www.linkedin.com/favicon.ico" 
+                title={"LinkedIn"} subtitle={"linkedin.com"} link={"https://www.linkedin.com/in/maxgreenall/"}></LinkCard>
 
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                        alt="nextui logo"
-                        height={40}
-                        radius="sm"
-                        src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                        width={40}
-                        />
-                        <div className="flex flex-col">
-                        <p className="text-md">Email</p>
-                        <p className="text-small text-default-500">maxgreenall@gmail.com</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl="https://avatars.githubusercontent.com/u/86160567?s=200&v=4" 
+                title={"Email"} subtitle={"maxgreenall@gmail.com"} link={"https://github.com/maxgreenall"}></LinkCard>
             </div>
         </div>
     )

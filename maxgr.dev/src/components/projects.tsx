@@ -1,7 +1,8 @@
-import {Card, CardHeader, Image, Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/react";
 import IframeLogo from '../assets/iframequicklink-logo.png';
 import WhiteboardLogo from '../assets/whiteboard-logo.png';
 import QueryLogo from '../assets/queryparameter-logo.png';
+import LinkCard from "./linkcard";
 
 function Projects(){
     return (
@@ -12,53 +13,11 @@ function Projects(){
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                            alt="nextui logo"
-                            height={40}
-                            radius="sm"
-                            src={IframeLogo}
-                            width={40}
-                        />
-                        <div className="flex flex-col">
-                            <p className="text-md">Iframe Quicklink</p>
-                            <p className="text-small text-default-500">Chrome extension</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl={IframeLogo} title={"Iframe Quicklink"} subtitle={"Chrome extension"} link={"https://chromewebstore.google.com/detail/iframe-quicklink-open-ifr/nfjhbjdckjldofelpokknfmbaaflfobm"} ></LinkCard>
 
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                            alt="nextui logo"
-                            height={40}
-                            radius="sm"
-                            src={WhiteboardLogo}
-                            width={40}
-                        />
-                        <div className="flex flex-col">
-                            <p className="text-md">Whiteboards</p>
-                            <p className="text-small text-default-500">Trello powerup</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl={WhiteboardLogo} title={"Whiteboards"} subtitle={"Trello powerup"} link={"https://trello.com/power-ups/657d870cac9ff5f8af13b518/"} ></LinkCard>
 
-                <Card>
-                    <CardHeader className="flex gap-3">
-                        <Image
-                            alt="nextui logo"
-                            height={40}
-                            radius="sm"
-                            src={QueryLogo}
-                            width={40}
-                        />
-                        <div className="flex flex-col">
-                            <p className="text-md">Query Parameter Editor</p>
-                            <p className="text-small text-default-500">Chrome extension</p>
-                        </div>
-                    </CardHeader>
-                </Card>
+                <LinkCard imageUrl={QueryLogo} title={"Query Parameter Editor"} subtitle={"Chrome extension"} link={"https://chromewebstore.google.com/detail/query-parameter-editor/kpdhkjadlkaflemjhhbfafmjaapfbfjb"} ></LinkCard>
             </div>
 
             <div className="pt-5 flex justify-center">
