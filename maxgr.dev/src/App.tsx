@@ -1,12 +1,21 @@
-import { NextUIProvider } from "@nextui-org/react";
+import Nav from "./components/nav"
+import Hero from "./components/hero"
+import Links from "./components/links"
+import Projects from "./components/projects"
+import Footer from "./components/footer"
 
 function App() {
   return (
-    <NextUIProvider>
-      <div className="py-10">
-        <h1 className="font-bold text-3xl text-center">Max Gr</h1>
+    <>
+      <Nav></Nav>
+
+      <div className="container mx-auto max-w-[1024px]">
+        <Hero></Hero>
+        <Projects></Projects>
+        <Links></Links>
+        <Footer></Footer>
       </div>
-    </NextUIProvider>
+    </>
   )
 }
 
