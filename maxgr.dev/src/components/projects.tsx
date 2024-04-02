@@ -1,4 +1,4 @@
-import { Button } from "@nextui-org/react";
+//import { Button } from "@nextui-org/react";
 import IframeLogo from '../assets/iframequicklink-logo.png';
 import WhiteboardLogo from '../assets/whiteboard-logo.png';
 import QueryLogo from '../assets/queryparameter-logo.png';
@@ -6,9 +6,9 @@ import LinkCard from "./linkcard";
 
 function Projects(){
     return (
-        <div className="py-20">
+        <div className="py-28">
             <div className="pb-10">
-                <h1 className="font-bold text-3xl text-center pb-2">Projects</h1>
+                <h1 className="font-bold text-3xl text-center pb-2">My projects</h1>
                 <h1 className="text-xl text-center text-gray-400">See what I've been working on 👀</h1>
             </div>
 
@@ -20,9 +20,9 @@ function Projects(){
                 <LinkCard imageUrl={QueryLogo} title={"Query Parameter Editor"} subtitle={"Chrome extension"} link={"https://chromewebstore.google.com/detail/query-parameter-editor/kpdhkjadlkaflemjhhbfafmjaapfbfjb"} ></LinkCard>
             </div>
 
-            <div className="pt-5 flex justify-center">
+            {/* <div className="pt-5 flex justify-center">
                 <Button color="primary" variant="flat">See all</Button>
-            </div>
+            </div> */}
         </div>
     );
 }

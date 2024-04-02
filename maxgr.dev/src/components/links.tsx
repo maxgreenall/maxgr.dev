@@ -2,7 +2,7 @@ import LinkCard from "./linkcard";
 
 function Links(){
     return(
-        <div className="py-20">
+        <div className="py-28" id="links">
             <div className="pb-10">
                 <h1 className="font-bold text-3xl text-center pb-2">Links</h1>
                 <h1 className="text-xl text-center text-gray-400">Feel free to reach out 👏</h1>
