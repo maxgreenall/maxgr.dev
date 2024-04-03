@@ -9,13 +9,13 @@ function Links(){
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <LinkCard imageUrl="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" 
+                <LinkCard imageUrl="/github.png" 
                 title={"GitHub"} subtitle={"github.com"} link={"https://github.com/maxgreenall"}></LinkCard>
 
-                <LinkCard imageUrl="https://www.linkedin.com/favicon.ico" 
+                <LinkCard imageUrl="/linkedin.ico" 
                 title={"LinkedIn"} subtitle={"linkedin.com"} link={"https://www.linkedin.com/in/maxgreenall/"}></LinkCard>
 
-                <LinkCard imageUrl="https://avatars.githubusercontent.com/u/86160567?s=200&v=4" 
+                <LinkCard imageUrl="/mg.png" 
                 title={"Email"} subtitle={"maxgreenall@gmail.com"} link={"mailto:maxgreenall@gmail.com"}></LinkCard>
             </div>
         </div>
