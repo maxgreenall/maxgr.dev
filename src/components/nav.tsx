@@ -1,4 +1,5 @@
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import { ThemeSwitcher } from "./themeSwitcher";
 
 function Nav( { onContactPress }: { onContactPress: () => void } ){
     return(
@@ -24,6 +25,9 @@ function Nav( { onContactPress }: { onContactPress: () => void } ){
           </NavbarItem>
         </NavbarContent> */}
         <NavbarContent justify="end">
+          <NavbarItem>
+            <ThemeSwitcher></ThemeSwitcher>
+          </NavbarItem>
           <NavbarItem>
             <Button as={Link} color="primary" href="#" variant="flat" onClick={onContactPress}>
               Contact
